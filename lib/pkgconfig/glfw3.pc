@@ -1,0 +1,13 @@
+prefix=C:/Users/robby/Desktop/OpenPhys/lib
+exec_prefix=${prefix}
+includedir=C:/Users/robby/Desktop/OpenPhys/lib/include
+libdir=C:/Users/robby/Desktop/OpenPhys/lib/lib
+
+Name: GLFW
+Description: A multi-platform library for OpenGL, window and input
+Version: 3.3.9
+URL: https://www.glfw.org/
+Requires.private: 
+Libs: -L${libdir} -lglfw3
+Libs.private:  -lgdi32
+Cflags: -I${includedir}
