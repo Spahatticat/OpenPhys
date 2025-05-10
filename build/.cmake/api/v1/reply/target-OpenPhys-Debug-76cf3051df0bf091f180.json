@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 15,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -46,14 +46,6 @@
 			[
 				{
 					"fragment" : "-g -std=c++17"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "C:/Program Files (x86)/GLFW/include"
 				}
 			],
 			"language" : "CXX",
@@ -86,7 +78,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Program Files (x86)\\GLFW\\lib\\libglfw3.a\"",
+				"fragment" : "-lglfw3",
 				"role" : "libraries"
 			},
 			{

@@ -69,7 +69,6 @@ include CMakeFiles/OpenPhys.dir/progress.make
 include CMakeFiles/OpenPhys.dir/flags.make
 
 CMakeFiles/OpenPhys.dir/src/main.cpp.obj: CMakeFiles/OpenPhys.dir/flags.make
-CMakeFiles/OpenPhys.dir/src/main.cpp.obj: CMakeFiles/OpenPhys.dir/includes_CXX.rsp
 CMakeFiles/OpenPhys.dir/src/main.cpp.obj: C:/Users/robby/OneDrive/Desktop/OpenPhys/src/main.cpp
 CMakeFiles/OpenPhys.dir/src/main.cpp.obj: CMakeFiles/OpenPhys.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\robby\OneDrive\Desktop\OpenPhys\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenPhys.dir/src/main.cpp.obj"
@@ -92,7 +91,6 @@ OpenPhys_EXTERNAL_OBJECTS =
 
 OpenPhys.exe: CMakeFiles/OpenPhys.dir/src/main.cpp.obj
 OpenPhys.exe: CMakeFiles/OpenPhys.dir/build.make
-OpenPhys.exe: C:/Program\ Files\ (x86)/GLFW/lib/libglfw3.a
 OpenPhys.exe: CMakeFiles/OpenPhys.dir/linkLibs.rsp
 OpenPhys.exe: CMakeFiles/OpenPhys.dir/objects1.rsp
 OpenPhys.exe: CMakeFiles/OpenPhys.dir/link.txt

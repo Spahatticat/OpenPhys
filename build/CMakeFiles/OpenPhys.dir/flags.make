@@ -4,7 +4,7 @@
 # compile CXX with C:/msys64/mingw64/bin/c++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/OpenPhys.dir/includes_CXX.rsp
+CXX_INCLUDES = 
 
 CXX_FLAGS = -g -std=c++17
 
