@@ -1,20 +1,26 @@
+# Minimum CMake version required
 cmake_minimum_required(VERSION 3.10)
-set(CMAKE_C_COMPILER_WORKS 1)
-set(CMAKE_CXX_COMPILER_WORKS 1)
-set(CMAKE_C_COMPILER "gcc.exe")
-set(CMAKE_CXX_COMPILER "g++.exe")
-set(PROJECT_SOURCE_DIR ../src)
-set(glfw3_DIR "lib/cmake/glfw3")
-project(OpenPhys VERSION 0.1)
-link_directories(lib/)
+
+# Project name and language
+project(OpenPhys VERSION 1.0)
+
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+
+
+# Add the executable
+add_executable(OpenPhys src/main.cpp)
+
+# Include directories (if needed)
+# target_include_directories(OpenPhys PRIVATE include)
+
+# Link libraries (if needed)
+# target_link_libraries(OpenPhys PRIVATE some_library)
+
+set(glfw3_DIR "C:/Program Files (x86)/GLFW/lib/cmake/glfw3")
 find_package(glfw3 REQUIRED)
-include_directories(OpenPhys include)
-add_executable(
-OpenPhys
-src/main.cpp
-src/glad.c
-src/object.cpp
-)
-target_link_libraries(OpenPhys opengl32 glfw3)
-
-
+# Find and include GLFW
+target_link_libraries(OpenPhys PRIVATE glfw)
