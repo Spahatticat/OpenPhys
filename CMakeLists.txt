@@ -10,9 +10,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add the executable
-add_executable(OpenPhys src/main.cpp)
+add_executable(OpenPhys src/main.cpp src/glad.c)
 
 set(glfw3_DIR "C:/Program Files (x86)/GLFW/lib/cmake/glfw3")
 find_package(glfw3 REQUIRED)
-# Find and include GLFW
-target_link_libraries(OpenPhys PRIVATE glfw3)
+target_include_directories(OpenPhys PRIVATE include) 
+target_link_libraries(OpenPhys glfw opengl32)

@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\robby\OneDrive\Desktop\OpenPhys
+CMAKE_SOURCE_DIR = C:\Users\robby\OneDrive\Desktop\Programming\OpenPhys
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\robby\OneDrive\Desktop\OpenPhys\build
+CMAKE_BINARY_DIR = C:\Users\robby\OneDrive\Desktop\Programming\OpenPhys\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\robby\OneDrive\Desktop\OpenPhys\build\CMakeFiles C:\Users\robby\OneDrive\Desktop\OpenPhys\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\robby\OneDrive\Desktop\Programming\OpenPhys\build\CMakeFiles C:\Users\robby\OneDrive\Desktop\Programming\OpenPhys\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\robby\OneDrive\Desktop\OpenPhys\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\robby\OneDrive\Desktop\Programming\OpenPhys\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ OpenPhys/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenPhys.dir\build.make CMakeFiles/OpenPhys.dir/build
 .PHONY : OpenPhys/fast
 
+src/glad.obj: src/glad.c.obj
+.PHONY : src/glad.obj
+
+# target to build an object file
+src/glad.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenPhys.dir\build.make CMakeFiles/OpenPhys.dir/src/glad.c.obj
+.PHONY : src/glad.c.obj
+
+src/glad.i: src/glad.c.i
+.PHONY : src/glad.i
+
+# target to preprocess a source file
+src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenPhys.dir\build.make CMakeFiles/OpenPhys.dir/src/glad.c.i
+.PHONY : src/glad.c.i
+
+src/glad.s: src/glad.c.s
+.PHONY : src/glad.s
+
+# target to generate assembly for a file
+src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenPhys.dir\build.make CMakeFiles/OpenPhys.dir/src/glad.c.s
+.PHONY : src/glad.c.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OpenPhys
+	@echo ... src/glad.obj
+	@echo ... src/glad.i
+	@echo ... src/glad.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

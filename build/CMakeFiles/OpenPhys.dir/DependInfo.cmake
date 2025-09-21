@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/robby/OneDrive/Desktop/OpenPhys/src/main.cpp" "CMakeFiles/OpenPhys.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenPhys.dir/src/main.cpp.obj.d"
+  "C:/Users/robby/OneDrive/Desktop/Programming/OpenPhys/src/glad.c" "CMakeFiles/OpenPhys.dir/src/glad.c.obj" "gcc" "CMakeFiles/OpenPhys.dir/src/glad.c.obj.d"
+  "C:/Users/robby/OneDrive/Desktop/Programming/OpenPhys/src/main.cpp" "CMakeFiles/OpenPhys.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenPhys.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
