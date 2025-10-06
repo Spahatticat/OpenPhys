@@ -2,5 +2,5 @@
 
 void main() {
     // Set the output color
-    gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0); // Example: red color with full opacity
+    gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0); // Example: red color with full opacity
 }
